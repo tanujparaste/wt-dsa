@@ -18,4 +18,10 @@ function arrayOfHiNTimes(n){
     return hiArray;
 }
 
-console.log(arrayOfHiNTimes(6));
+console.log(arrayOfHiNTimes(6)); // space complexity: O(n) --> linear space
+
+// Big O Space compexity:
+// let hiArray = [] -- O(n), because it is getting filled with n items
+// let i = 0 -- O(1)
+// O(n + 1)
+// O(n)
