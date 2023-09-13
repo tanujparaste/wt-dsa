@@ -10,6 +10,8 @@ function findNemo(array){
     }
 }
 
+findNemo(large); // Big O: O(n)
+
 // const compressFirstBox = (boxes) => {
 //     console.log(boxes[0]); // O(1)
 // }
