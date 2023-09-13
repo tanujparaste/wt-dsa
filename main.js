@@ -18,27 +18,42 @@
 
 // compressFirstBox([1, 2, 3, 4, 5]); // Big O: O(1)
 
-function printFirstItemThenFirstHalfThenSayHi100Times(items){
-    console.log(items[0]); // O(1)
-    let middleIndex = Math.floor(items.length / 2); // O(1)
-    let index = 0; // O(1)
+// function printFirstItemThenFirstHalfThenSayHi100Times(items){
+//     console.log(items[0]); // O(1)
+//     let middleIndex = Math.floor(items.length / 2); // O(1)
+//     let index = 0; // O(1)
     
-    while(index < middleIndex){ // O(n/2)
-      console.log(items[index]); 
-      index++;
-    }
+//     while(index < middleIndex){ // O(n/2)
+//       console.log(items[index]); 
+//       index++;
+//     }
   
-    for(let i = 0; i < 100; i++){ // O(100)
-      console.log("hi");
-    }
+//     for(let i = 0; i < 100; i++){ // O(100)
+//       console.log("hi");
+//     }
+//   }
+  
+//   printFirstItemThenFirstHalfThenSayHi100Times([1,2,3,4,5]); // O(n) --> linear time
+
+// // Big O:
+// // O(1 + n/2 + 100)
+// // the rule is to drop the constants
+// // O(101 + n/2)
+// // O(1 + n/2)
+// // O(1 + n)
+// // O(n)
+
+// Big O rule 3: different terms for inputs
+
+function compressBoxesTwice(boxes, boxes2){
+    boxes.forEach(function(boxes){
+      console.log(boxes); // O(m)
+    });
+  
+    boxes2.forEach(function(boxes){
+      console.log(boxes); // O(n)
+    });
   }
   
-  printFirstItemThenFirstHalfThenSayHi100Times([1,2,3,4,5]); // O(n) --> linear time
-
-// Big O:
-// O(1 + n/2 + 100)
-// the rule is to drop the constants
-// O(101 + n/2)
-// O(1 + n/2)
-// O(1 + n)
-// O(n)
+  // Big O
+  // O(m + n)
