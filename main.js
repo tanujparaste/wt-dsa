@@ -59,16 +59,39 @@
 //   // O(m + n)
 
 
-// Common interview question
+// // Common interview question
 
-const boxes = [1, 2, 3, 4, 5];
+// const boxes = [1, 2, 3, 4, 5];
 
-function logAllPairsOfArray(array) {
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array.length; j++) {
-      console.log(`${array[i]}, ${array[j]}`); // O(n * n), first n because of outer loop, second n because of inner loop
-    }
+// function logAllPairsOfArray(array) {
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = 0; j < array.length; j++) {
+//       console.log(`${array[i]}, ${array[j]}`); // O(n * n), first n because of outer loop, second n because of inner loop
+//     }
+//   }
+// }
+
+// logAllPairsOfArray(boxes); // O(n * n) = O(n^2) --> quadratic time
+
+// Big O rule 4: drop non dominant terms
+
+function printAllNumbersThenAllPairSums(numbers) {
+    console.log("These are the numbers:");
+    numbers.forEach(function (number) {
+      console.log(number);
+    });
+  
+    console.log("and these are their sums");
+    numbers.forEach(function (firstNumber) {
+      numbers.forEach(function (secondNumber) {
+        console.log(firstNumber + secondNumber);
+      });
+    });
   }
-}
-
-logAllPairsOfArray(boxes); // O(n * n) = O(n^2) --> quadratic time
+  
+  printAllNumbersThenAllPairSums([1, 2, 3, 4, 5]);
+  
+  // Big O
+  // O(n + n^2)
+  // n can be dropped, because for a large n, n^2 is more important than n
+  // O(n^2)
