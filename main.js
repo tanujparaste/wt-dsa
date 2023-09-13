@@ -43,17 +43,32 @@
 // // O(1 + n)
 // // O(n)
 
-// Big O rule 3: different terms for inputs
+// // Big O rule 3: different terms for inputs
 
-function compressBoxesTwice(boxes, boxes2){
-    boxes.forEach(function(boxes){
-      console.log(boxes); // O(m)
-    });
+// function compressBoxesTwice(boxes, boxes2){
+//     boxes.forEach(function(boxes){
+//       console.log(boxes); // O(m)
+//     });
   
-    boxes2.forEach(function(boxes){
-      console.log(boxes); // O(n)
-    });
+//     boxes2.forEach(function(boxes){
+//       console.log(boxes); // O(n)
+//     });
+//   }
+  
+//   // Big O
+//   // O(m + n)
+
+
+// Common interview question
+
+const boxes = [1, 2, 3, 4, 5];
+
+function logAllPairsOfArray(array) {
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+      console.log(`${array[i]}, ${array[j]}`); // O(n * n), first n because of outer loop, second n because of inner loop
+    }
   }
-  
-  // Big O
-  // O(m + n)
+}
+
+logAllPairsOfArray(boxes); // O(n * n) = O(n^2) --> quadratic time
