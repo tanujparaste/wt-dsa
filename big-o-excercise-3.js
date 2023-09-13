@@ -11,3 +11,7 @@ array[array.length - 1]; // O(1)
 // time complexity: O(1)
 
 // compare the dates of tweets : O(n^2)
+
+// what is the time complexity for the lenght of string?
+"djkdjkdjdkjfkdjkd".length // it depends on the programming language, every language has its own implementation
+                            // for javascript, length is simply a property, hence O(1)
