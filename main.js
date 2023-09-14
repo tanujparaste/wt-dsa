@@ -64,3 +64,8 @@ function hasCommonItems2(arr1, arr2) {
 }
 
 console.log(hasCommonItems2(array1, array2)); // time complexity: O(m + n) because we are not using nested loop
+
+// improving code by checking
+// how can we break the code
+// always have 2 parameter that are arrays?
+// what if one of the arg passed is a primitive or null?
