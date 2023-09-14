@@ -76,3 +76,11 @@ function hasCommonItems3(arr1, arr2) {
 }
 
 console.log(hasCommonItems3(array1, array2));
+
+// Approach 1:
+// time complexity: O(m * n)
+// space complexity: O(1)
+
+// Approach 2:
+// time complexity: O(m + n)
+// space complexity: O(m)
